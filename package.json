@@ -145,7 +145,7 @@
     "compression": "^1.7.0",
     "font-awesome": "^4.7.0",
     "graphql-tag": "^2.4.2",
-    "helmet": "^3.8.1",
+    "helmet": "^3.21.1",
     "history": "^4.6.3",
     "jquery": "^2.2.1",
     "js-base64": "^2.1.9",
