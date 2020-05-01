@@ -12,7 +12,9 @@
     "prod": "rimraf docs/assets && cross-env NODE_ENV=production webpack -p --config webpack.production.config.js",
     "start": "cross-env NODE_ENV=dev node server.hot.reload",
     "start-spa-dev": "npm run dev && cross-env NODE_ENV=dev nodemon ./src/server/SPA/index.js",
-    "start-spa-prod": "npm run prod && cross-env NODE_ENV=production node ./src/server/SPA/index.js"
+    "start-spa-prod": "npm run prod && cross-env NODE_ENV=production node ./src/server/SPA/index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "engines": {
     "node": ">=6.11.1",
@@ -147,7 +149,7 @@
     "graphql-tag": "^2.4.2",
     "helmet": "^3.8.1",
     "history": "^4.6.3",
-    "jquery": "^2.2.1",
+    "jquery": "^3.5.0",
     "js-base64": "^2.1.9",
     "jwt-decode": "^2.2.0",
     "moment": "^2.18.1",
@@ -166,6 +168,8 @@
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "serialize-javascript": "^1.4.0"
-  }
+    "serialize-javascript": "^1.4.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
